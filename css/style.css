@@ -127,7 +127,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #008e00;
+  background: #a42cd6;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -191,13 +191,13 @@ textarea {
   font-size: 1.6rem;
 }
 .btn--theme {
-  background: #008e00;
+  background: #a42cd6;
   color: #fff;
 }
 .btn--theme-inv {
-  color: #008e00;
+  color: #a42cd6;
   background: #fff;
-  border: 2px solid #008e00;
+  border: 2px solid #a42cd6;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
 }
@@ -230,7 +230,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 142, 0, 0.8), rgba(0, 142, 0, 0.8)), url(../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(164, 44, 214, 0.8), rgba(164, 44, 214, 0.8)), url(../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -414,7 +414,7 @@ textarea {
 }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 142, 0, 0.8), rgba(0, 142, 0, 0.8)), url(../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(80, 34, 116, 0.8), rgba(80, 34, 116, 0.8)), url(../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
 }
@@ -513,7 +513,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 142, 0, 0.8), rgba(0, 142, 0, 0.8)), url(../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(238, 180, 179, 0.8), rgba(238, 180, 179, 0.8)), url(../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -650,7 +650,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__logo-container:hover {
-  color: #008e00;
+  color: #a42cd6;
 }
 .header__logo-img-cont {
   width: 5rem;
@@ -658,7 +658,7 @@ textarea {
   border-radius: 50px;
   overflow: hidden;
   margin-right: 1.5rem;
-  background: #008e00;
+  background: #a42cd6;
 }
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
@@ -699,7 +699,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__link:hover {
-  color: #008e00;
+  color: #a42cd6;
 }
 @media only screen and (max-width: 56.25em) {
   .header__link {
@@ -759,7 +759,7 @@ textarea {
   transition: color 0.3s;
 }
 .header__sm-menu-link a:hover {
-  color: #008e00;
+  color: #a42cd6;
 }
 .header__sm-menu-link:first-child a {
   border-top: 1px solid #eee;
