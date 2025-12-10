@@ -18,19 +18,65 @@
     />
 
     <style>
-      body {background-color: #2f242c;}
+      :root {
+        --resume-header-offset: 9rem;
+        --resume-frame-max-width: 900px;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        :root {
+          --resume-header-offset: 7.5rem;
+        }
+      }
+
+      .resume-page {
+        background-color: #2f242c;
+        margin: 0;
+        min-height: 100vh;
+        padding-top: var(--resume-header-offset);
+      }
+
+      .resume-page__main {
+        min-height: calc(100vh - var(--resume-header-offset));
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1.5rem 6rem;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        .resume-page__main {
+          padding: 1.5rem 1.2rem 5rem;
+        }
+      }
+
+      .resume-page__frame {
+        width: min(100%, var(--resume-frame-max-width));
+        height: calc(100vh - var(--resume-header-offset) - 6rem);
+        min-height: 60rem;
+        border: none;
+        display: block;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+      }
+
+      @media only screen and (max-width: 56.25em) {
+        .resume-page__frame {
+          height: calc(100vh - var(--resume-header-offset) - 5rem);
+          min-height: 50rem;
+        }
+      }
     </style>
     
   </head>
     
-  <body>
+  <body class="resume-page">
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
               src="./assets/png/arnav-surjan.png"
-              alt="Arnav Surjan Logo Image"
+              alt="Arnav Surjan logo"
               class="header__logo-img"
             />
           </div>
@@ -96,11 +142,19 @@
     </header>
 
     
-    <iframe
-    title="Arnav Surjan's Resume"
-    src=" ./assets/pdf/ArnavSurjan-Resume.pdf"
-    style="height: 137vh; width: 90%; max-width: 800px; margin: 0 auto; display: block; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-    ></iframe>
+    <main class="resume-page__main">
+      <object
+        class="resume-page__frame"
+        data="./assets/pdf/ArnavSurjan-Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+        type="application/pdf"
+        aria-label="Arnav Surjan resume"
+      >
+        <p>
+          Unable to display the embedded PDF. You can
+          <a href="./assets/pdf/ArnavSurjan-Resume.pdf">download it here</a>.
+        </p>
+      </object>
+    </main>
 
     <footer class="main-footer">
         <div class="main-container">
